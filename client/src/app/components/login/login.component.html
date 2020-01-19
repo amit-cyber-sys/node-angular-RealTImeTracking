@@ -1,0 +1,29 @@
+<ng4-loading-spinner [threshold]="2" [timeout]="400000"> </ng4-loading-spinner>
+<div class="login-div" fxLayout="row" fxLayoutAlign="center center" style="height: 100vh; float: right;">
+  <mat-card class="login-card" fxFlex="30" fxFlex.xs="70" style="color: #111903;    background: #f5bd53;">
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <div style="font-weight: 600;font-size: 25px; text-align: center;padding-top: 20px;padding-bottom: 20px">Login</div>
+      <div class="form-div">
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Enter your email" autocomplete="off" [formControl]="email">
+          <mat-error *ngIf="email.invalid">{{getEmailErrorMessage()}}</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="form-div">
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'" autocomplete="off"
+            [formControl]="password">
+          <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          <mat-error *ngIf="password.invalid">{{getPasswordErrorMessage()}}</mat-error>
+
+        </mat-form-field>
+      </div>
+      <div class="button-div">
+        <button mat-button (click)="login()" style="background: green;color: #101803;">Login</button>
+      </div>
+    </div>
+
+  </mat-card>
+</div>

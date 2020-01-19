@@ -1,0 +1,94 @@
+.loginBtn {
+    height: 40px;
+    /* background: linear-gradient(0deg, #123739, #005885); */
+    background: #0089C3;
+    border-radius: 25px;
+    color: white;
+    margin-top: 2em;
+    display: inline-block;
+    float: right;
+    width: 160px;
+  }
+  
+  .login-div {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header {
+    color: #123739;
+  }
+  
+  .forgot {
+    color: #123739;
+    font-size: 12px;
+    margin-top: 14px;
+  }
+  
+  .full-width-input {
+    width: 100% !important;
+  }
+  
+  .loginCredential {
+    padding: 5px 10px;
+    border: 1px solid gray;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    width: 47%;
+    /* height: 50px; */
+  }
+  
+  // :host::ng-deep .mat-form-field-underline {
+  //   display: none;
+  //   color: $green;
+  // }
+  
+  .login-card {
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto */
+    width: 400px;
+  }
+  
+  .form-div {
+    width: 100%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+  }
+  
+  .form-field {
+    width: 100%;
+  }
+  
+  .button-div {
+    width: 80%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+  }
+  
+  .login-button {
+    width: 100%;
+    //   background-color: $green;
+    color: white;
+    font-weight: 500;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  
+  // :host ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick{
+  //   color:$green !important;
+  //   // font-color: $green;
+  // } 
+  
+  // :host ::ng-deep .mat-form-field.mat-focused .mat-form-field-label{
+  //   color:$green !important;
+  // }
+  
+  
